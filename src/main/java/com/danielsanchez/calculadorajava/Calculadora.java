@@ -33,8 +33,12 @@ public class Calculadora {
             case '%':        
                  //Operacion modulo:          
                     respuesta = numero1 % numero2; 
-                break;     
-                
+                break;   
+            case 'r':
+                 // Operacion raiz: 
+                    respuesta = Math.sqrt(numero1);
+                break; 
+               
             default:
                 throw new IllegalArgumentException("Operación inválida.");
         }
@@ -57,5 +61,9 @@ public class Calculadora {
         
         double respuesta = calcular(numero1, numero2, operacion);
         System.out.println("La respuesta es " + respuesta);
+    }
+
+    private static void sqrt(int numero1, int numero2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
